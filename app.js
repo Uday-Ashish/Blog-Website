@@ -4,15 +4,14 @@ const { title } = require('process');
 const mongoose = require('mongoose')
 const Blog = require('./models/blog');
 const { contentType } = require('express/lib/response');
+require('dotenv').config()
 
 const app = express()
-const username = 'blgusr';
-const password = 'D*32SA%7CSvvi%C';
-const URL = 'mongodb+srv://blgusr2:easypass@cluster0.dsueh7t.mongodb.net/BlogContent?retryWrites=true&w=majority&appName=Cluster0'
+const url2 = process.env.DB_CONNECTION_STRING;
 
 
 
-mongoose.connect(URL)
+mongoose.connect(url2)
     .then((result) => {
         console.log('db connected');
         app.listen(3000)
