@@ -1,0 +1,54 @@
+
+<html>
+  
+  <%- include('./partials/head.ejs') %>
+  
+  
+  <body>
+
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "/" class = "navbar-brand">Blogspot | <%= title %></a>
+          <div class = "navbar-nav">
+            <a href = "/">home</a>
+            <a href = "/create">create</a>
+            <a href = "/blogs">All Blogs</a>
+            <a href = "/about">about</a>
+          </div>
+        </div>
+      </nav>
+      
+      <section class = "about" id = "about">
+        <div class = "container">
+          <div class = "about-content">
+            <div>
+              <img src = "images/Profile.jpg" alt = "">
+            </div>
+            <div class = "about-text">
+              <div class = "title">
+                <h2>Uday Ashish</h2>
+                <p> lieutenant General of Programming 🎖️🎖️🎖️ </p>
+              </div> 
+              <p>Hey there! I'm Uday Ashish. Currently, I'm a student pursuing my Bachelor of Technology at the Indian Institute of Technology, Dhanbad. I have a passion for learning and enjoy delving into new concepts. <br> <br>   
+
+                This website is a project born out of my curiosity to explore Node.js, Express, and MongoDB. It's been a great learning experience for me, and I'm excited to share what I've discovered along the way. Join me on this journey of discovery and growth!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </header>
+
+    <!-- about -->
+    
+    <!-- end of about -->
+    
+
+    <!-- footer -->
+    <%- include('./partials/footer.ejs') %>
+    <!-- end of footer -->
+    
+    
+  </body>
+</html>

@@ -1,0 +1,54 @@
+
+<html>
+  
+  <%- include('./partials/head.ejs') %>
+  
+  
+  <body>
+
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "/" class = "navbar-brand">Blogspot | <%= title %></a>
+          <div class = "navbar-nav">
+            <a href = "/">home</a>
+            <a href = "/create">create</a>
+            <a href = "/blogs">All Blogs</a>
+            <a href = "/about">about</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="blgform">
+        <div class="container">
+            <form action="submit" method="post" >
+                <label for="title">
+                  Enter Title:<input type="text" name="title" id="title" required> 
+                </label>
+                <br>
+                <label for="subhead">
+                  Enter Subheading:<input type="text" name="subhead" id="subhead" required> 
+                </label>
+                <br>
+                <label for="content">
+                  Enter Content:<textarea rows="5" name="content" id="content" required></textarea>
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div> 
+      </div>
+      
+      
+
+      
+    </header>
+    
+
+    <!-- footer -->
+    <%- include('./partials/footer.ejs') %>
+    <!-- end of footer -->
+    
+    
+  </body>
+</html>
